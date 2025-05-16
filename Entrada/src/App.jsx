@@ -18,7 +18,8 @@ function App() {
                 Capture su texto
             </div>
             {/* 5. Pasar el estado como valor y usar onChange */}
-            <input value={miTexto} onChange={handleText} />
+            <div className="input">
+            <input value={miTexto} onChange={handleText} /></div>
             <h3>Su Texto</h3>
             <p>
                 {/* Mostrar el texto de la caja de entrada aquí */}

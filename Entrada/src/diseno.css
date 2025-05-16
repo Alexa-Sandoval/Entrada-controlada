@@ -1,7 +1,15 @@
 .diseno {
-    border: 5px solid lightgray;
+    text-align: center;
+    border: 1px solid lightgray;
     border-radius: 5px;
     padding: 10px;
+}
+
+input {
+    text-align: center;
+    border: 2px solid ;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .diseno form {
