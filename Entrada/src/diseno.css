@@ -1,10 +1,10 @@
-.search-bar {
+.onChange {
     border: 5px solid lightgray;
     border-radius: 5px;
     padding: 10px;
 }
 
-.search-bar form {
+.onChange {
     display: flex;
     flex-direction: column;
 }
