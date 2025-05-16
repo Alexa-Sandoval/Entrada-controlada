@@ -13,7 +13,7 @@ function App() {
     };
 
     return (
-        <div>
+        <div className="diseno" >
             <div>
                 Capture su texto
             </div>

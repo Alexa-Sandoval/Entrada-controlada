@@ -1,10 +1,10 @@
-.onChange {
+.diseno {
     border: 5px solid lightgray;
     border-radius: 5px;
     padding: 10px;
 }
 
-.onChange {
+.diseno form {
     display: flex;
     flex-direction: column;
 }
