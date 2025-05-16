@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import './diseno.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+    // 1. Crear un estado llamado miTexto
+    const [miTexto, setMiTexto] = useState('');
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    // 2. Crear función handleText
+    const handleText = (event) => {
+        // 3. Tomar el valor del input con event.target.value
+        // 4. Actualizar el estado con el nuevo valor
+        setMiTexto(event.target.value);
+    };
+
+    return (
+        <div>
+            <div>
+                Capture su texto
+            </div>
+            {/* 5. Pasar el estado como valor y usar onChange */}
+            <input value={miTexto} onChange={handleText} />
+            <h3>Su Texto</h3>
+            <p>
+                {/* Mostrar el texto de la caja de entrada aquí */}
+                {miTexto}
+            </p>
+        </div>
+    );
 }
 
-export default App
+export default App;
