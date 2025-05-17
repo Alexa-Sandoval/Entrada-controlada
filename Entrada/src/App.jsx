@@ -11,7 +11,7 @@ function App() {
     return (
         <div className="diseno" >
             <div>
-                Capture su texto
+                <h3>Capture su texto</h3>
             </div>
             {}
             <div className="input">
